@@ -13,7 +13,9 @@ public class Serveur {
         try {
         	
             // Création du socket serveur sur le port 1234
-            socket = new DatagramSocket(1234);            
+            socket = new DatagramSocket(1234);
+            System.out.println("je suis un serveur en attente d'un client");
+            
             byte[] buffer = new byte[1024];
 
             while (true) {
